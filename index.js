@@ -4,6 +4,7 @@ const chalk = require('chalk');
 const rl = require('readline').createInterface({
     input: process.stdin, output: process.stdout
 });
+
 const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const question = (query) => new Promise(resolve => rl.question(query, (answer) => resolve(answer)));
 
